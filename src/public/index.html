@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="button.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-12">
+          <div class="hide3">
+            <a href="#"
+              ><img
+                class="logo"
+                src="src/image/logo.png"
+                alt=""
+                width="100%"
+                height="100%"
+            /></a>
+          </div>
+          <div class="show1">
+            <a href="#"
+              ><img src="src/image/header.png" width="70%" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-5 col-md-7 col-10">
+          <div class="row">
+            <div class="col-sm-auto hide">
+              <button class="btn flex catalog">
+                <div class="main_line">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+                <h5>Каталог</h5>
+              </button>
+            </div>
+            <div class="col-sm-auto">
+              <span class="search">
+                <button class="btn btn_buy">
+                  <span>Покупки</span>
+                </button>
+                <input type="" placeholder="Искать и сразу находить товарь" />
+                <button class="btn btn_search">
+                  <h5>Найти</h5>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-5 col-md-2 col-2 flex">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+              <div class="main_line">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Бонусы</a>
+              <a href="#">Заказы</a>
+              <a href="#">Избранное</a>
+              <a href="#">Корзина</a>
+            </div>
+          </div>
+
+          <a href=""><div class="bonus icons"></div></a>
+          <a href=""><div class="orders icons"></div></a>
+          <a href=""><div class="favorites icons"></div></a>
+          <a href=""><div class="basket icons"></div></a>
+          <a href=""><div class="user icons"></div></a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2 col-lg-3 col-md-0">
+          <div class="hide1">
+            <button class="flex region_select">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-geo-alt"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+                  />
+                  <path
+                    d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                  />
+                </svg>
+              </div>
+              <div>Ростов-на-Дону</div>
+            </button>
+          </div>
+        </div>
+        <div class="row col-xl-10 col-lg-9 col-md-12 list">
+          <div class="col-md-2 col-sm-4">
+            <a href="#">Покупки</a>
+          </div>
+          <div class="col-md-2 col-sm-4">
+            <a href="#">Электроника</a>
+          </div>
+          <div class="col-md-2 col-sm-4">
+            <a href="#">Компьютеры</a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4">
+            <a href="#">Бытовая техника</a>
+          </div>
+          <div class="col-xl-2 col-lg-1 col-md-1 col-sm-4">
+            <a href="#">Дом</a>
+          </div>
+          <div class="col-md-2 col-sm-4">
+            <a href="#">Продукты</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin: 1% 2% 1% 2%;">
+      <div
+        class="carousel slide carousel-fade"
+        id="carouselControls"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="src/Top_carousel/1.webp" alt="" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="src/Top_carousel/2.webp" alt="" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="src/Top_carousel/3.webp" alt="" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="src/Top_carousel/4.webp" alt="" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="src/Top_carousel/5.webp" alt="" class="d-block w-100" />
+          </div>
+        </div>
+        <a
+          href="#carouselControls"
+          class="carousel-control-prev"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a
+          href="#carouselControls"
+          class="carousel-control-next"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+	</div>
+</div>
+</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9">
+          <h3 class="stock">Ваша подборка для покупок у нас</h3>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+            data-interval="9000"
+            data-wrap="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-4">
+                    <a href="#"
+                      ><img src="src/image/1.png" width="100%" alt=""
+                    /></a>
+                  </div>
+                  <div class="col-4">
+                    <a href="#"
+                      ><img src="src/image/2.png" width="100%" alt=""
+                    /></a>
+                  </div>
+                  <div class="col-4">
+                    <a href="#"
+                      ><img src="src/image/3.png" width="100%" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4">
+                    <a href="#"
+                      ><img src="src/image/4.png" width="100%" alt=""
+                    /></a>
+                  </div>
+                  <div class="col-4">
+                    <a href="#"
+                      ><img src="src/image/5.png" width="100%" alt=""
+                    /></a>
+                  </div>
+                  <div class="col-4">
+                    <a href="#"
+                      ><img src="src/image/6.png" width="100%" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only"></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 sub_baner">
+          <a href="#"><img src="src/image/sidebar.webp" width="100%" alt="" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9">
+          <h3 class="stock">Выгодные акции</h3>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+            data-interval="9000"
+            data-wrap="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-4">
+                    <a href="#"
+                      ><img src="src/image/1_2.webp" width="100%" alt="" />
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="#"
+                      ><img src="src/image/2_2.webp" width="100%" alt="" />
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="#"
+                      ><img src="src/image/3_2.webp" width="100%" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-3">
+                    <a href="#"
+                      ><img src="src/image/4_2.webp" width="100%" alt="" />
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="#"
+                      ><img src="src/image/5_2.webp" width="100%" alt="" />
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a href="#"
+                      ><img src="src/image/6_2.webp" width="100%" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only"></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+		</div>
+		
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9">
+          <h3 class="h3">Доставка продуктов за 1-2 часа</h3>
+          <div class="flex btn_selection">
+            <button class="btn">Лучшее</button>
+            <button class="btn">Маме</button>
+            <button class="btn">Жене</button>
+            <button class="btn">Дочке</button>
+            <button class="btn">Подруге</button>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <img src="src/image/buy_1.webp" width="80%" alt="" />
+                <div>
+                  <span class="number">83</span><span class="symbol">₽</span>
+                </div>
+                <div><a href="#">Завтрак готовый Kellog's Unicorn...</a></div>
+                <div><button class="btn buy">В корзину</button></div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <img src="src/image/buy_2.webp" width="50%" alt="" />
+                <div>
+                  <span class="number">159</span><span class="symbol">₽</span>
+                </div>
+                <div><a href="#">Elza Цикорий растворимый гранул...</a></div>
+                <div><button class="btn buy">В корзину</button></div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <img src="src/image/buy_3.webp" width="40%" alt="" />
+                <div>
+                  <span class="number">82</span><span class="symbol">₽</span>
+                </div>
+                <div><a href="#">Parmalat Молоко ультрапастери...</a></div>
+                <div><button class="btn buy">В корзину</button></div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <img src="src/image/buy_4.webp" width="86%" alt="" />
+                <div>
+                  <span class="number">429</span><span class="symbol">₽</span>
+                </div>
+                <div><a href="#">Кофе в зернах Egoiste Noir, 250 г</a></div>
+                <div><button class="btn buy">В корзину</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer row">
+          <div class="col-lg-2 col-md-6">
+            <div class="info">
+              <h5>Покупателям</h5>
+              <div class="pad"><a href="#">Как выбрать товар</a></div>
+              <div class="pad"><a href="#">Обратная связь</a></div>
+              <div class="pad"><a href="#">Обратная связь</a></div>
+              <div class="pad"><a href="#">О сервисе</a></div>
+              <div class="pad"><a href="#">Участие в иследованиях</a></div>
+              <div class="pad"><a href="#">Возвраты</a></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="info">
+              <h5>Продавцам</h5>
+              <div class="pad"><a href="#">Личный кабинет продавца</a></div>
+              <div class="pad"><a href="#">Подключение продавца</a></div>
+              <div class="pad">
+                <a href="#">Справка Яндекс.Маркет для магазинов</a>
+              </div>
+              <div class="pad">
+                <a href="#">Справка маркетплейса для продавцов</a>
+              </div>
+              <div class="pad"><a href="#">Сайт для партнеров</a></div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div class="info">
+              <h5>Сотрудничество</h5>
+              <div class="pad"><a href="#">Новости компании</a></div>
+              <div class="pad"><a href="#">Партнерская программа</a></div>
+              <div class="pad"><a href="#">Производителям</a></div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6">
+            <div class="info">
+              <div class="flex">
+                <div class="telezka">
+                  <a href="#"
+                    ><img
+                      src="src/image/telezka.svg"
+                      width="36px"
+                      height="40px"
+                      alt=""
+                  /></a>
+                </div>
+                <div>
+                  <a href="#"
+                    ><h5>
+                      Советник находит нужные вам товары <br />по более выгодной
+                      цене.
+                    </h5></a
+                  >
+                </div>
+              </div>
+              <div class="pad">
+                <p class="text">
+                  314 782 062 предложения от 26 270 магазинов.<br />Обновлено
+                  13.06.2021 в 16:29 по московскому времени.
+                </p>
+              </div>
+              <div class="flex social">
+                <a href="#"
+                  ><img
+                    src="src/image/facebook.svg"
+                    width="30"
+                    height="30"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img src="src/image/vk.svg" width="30" height="30" alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    src="src/image/instagram.svg"
+                    width="30"
+                    height="30"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer2">
+        <div class="container">
+          <div class="row bl">
+            <div class="col-xl-3 col-md-6">
+              <div>Мобильная версия</div>
+            </div>
+            <div class="col-xl-2 col-md-6">
+              <div>Статистика</div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div>Пользовательское соглашение</div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div>© 2021 ООО «<a href="#">Яндекс.Маркет</a>»</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
